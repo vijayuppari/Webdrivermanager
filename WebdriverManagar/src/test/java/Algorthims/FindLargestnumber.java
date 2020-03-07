@@ -8,7 +8,7 @@ public class FindLargestnumber {
 		
 		int num[]={10,19,90,78,100,190};
 		Arrays.sort(num);
-		int i = num[num.length-2];
+		int i = num[num.length-1];
 		System.out.println(i);
 		
 	}
