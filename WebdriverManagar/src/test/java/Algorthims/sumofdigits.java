@@ -3,6 +3,7 @@ package Algorthims;
 public class sumofdigits {
 
 	public static void main(String[] args) {
+		// reverse the number
 		reverse(123);
 	}
 	
