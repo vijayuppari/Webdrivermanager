@@ -3,12 +3,10 @@ package Algorthims;
 public class sumofdigits {
 
 	public static void main(String[] args) {
-		//aormstrong(123);
-		//sumofdigts(123);
 		reverse(123);
 	}
 	
-	// Aormstrong number
+	// Armstrong number
 	public static void aormstrong(int num){
 		
 		int reminder, sum=0;
