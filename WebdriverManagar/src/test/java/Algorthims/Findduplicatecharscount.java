@@ -8,7 +8,7 @@ public class Findduplicatecharscount {
 	
 	public static void main(String[] args) {
 		
-		findduplicates("vijaykumaruppari");
+		findduplicates("abbcccd");
 	}
 	
 	public static void findduplicates(String str){
@@ -24,12 +24,11 @@ public class Findduplicatecharscount {
 		
 		Set<Character> keySet = chamap.keySet();
 		for(Character key:keySet){
-			if(chamap.get(key)>1){
-				System.out.println("Character is " +  key+" "  +chamap.get(key));
+			if(chamap.get(key)>=1){
+				System.out.println("Character " +  key+" is "  +chamap.get(key));
+				//System.out.print(chamap.get(key)+key);
 			}
-		}
-		
-		
+		}	
 		
 	}
 

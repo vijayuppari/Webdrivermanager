@@ -6,9 +6,10 @@ public class palindromindex {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(palindrom("caaa"));
-		System.out.println(palindrom("aaac"));
-		System.out.println(palindrom("aaa"));
+		System.out.println(ispalindro("aaa"));
+		//System.out.println(palindrom("caaa"));
+		//System.out.println(palindrom("aaac"));
+		//System.out.println(palindrom("aaa"));
 	}
 	
 	public static int palindrom(String s){
@@ -16,6 +17,7 @@ public class palindromindex {
 		int len =s.length();
 		for(int i=0;i<len/2;i++){
 			if(s.charAt(i)!=s.charAt(len-i-1)){
+				
 				
 				if(i+1<len){
 					boolean ispal = ispalindro(s.substring(i+1,len-i));

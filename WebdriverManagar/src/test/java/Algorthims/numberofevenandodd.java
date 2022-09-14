@@ -4,7 +4,7 @@ public class numberofevenandodd {
 	
 	public static void main(String[] args) {
 		
-		numberofeven(123);
+		numberofeven(1237);
 		
 	}
 	

@@ -4,18 +4,24 @@ public class fibanaicseries {
 	
 	
 	// Using recusrive function
-	public static int fibrecusrsive(int n){
+	static int n1=0,n2=1,n3=0;
+	public static void fibrecusrsive(int n){
 		
-		if(n<=1){
-			return n;		
+		if(n>0){
+			n3=n1+n2;
+			n1=n2;
+			n2=n3;
+			System.out.println(n3);
+			fibrecusrsive(n-1);
 		}
-		return fibrecusrsive(n-1)+fibrecusrsive(n-2);
+		
 	}
 	
 	public static void main(String[] args) {
-		
-		//System.out.println(fibrecusrsive(9));
-		System.out.println(fib(9));
+		int count=10;
+		fibrecusrsive(count);
+		//System.out.println(fib(5));
+		//printfib(5);
 	}
 	
 	// Using normal for loop
@@ -32,6 +38,24 @@ public class fibanaicseries {
 	}
 	return f[n];
 	}
+	
+	public static void printfib(int count){
+		
+		int num1=0;int num2=1;int num3=0;
+		if(count>0){
+			num3=num1+num2;
+			num1=num2;
+			num2=num3;
+			System.out.println(num3);
+			printfib(count-1);
+			
+		}
+		
+		
+	}
+	
+	
+	
 	
 	
 }

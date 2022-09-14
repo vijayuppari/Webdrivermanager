@@ -10,7 +10,7 @@ public class pairwithgievensum {
 	
 	public static void main(String[] args) {
 		 int a[]={2,3,5,9,6,4};
-		 int sum=11;
+		 int sum=14;
 		//pairwithsum(a, sum);
 		 pairindexhashing(a, sum);
 	}

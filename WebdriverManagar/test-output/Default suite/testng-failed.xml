@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webdrivermanager.launchbrowser">
+      <class name="seleniumadvancedtpics.dropdownquniquevalues">
         <methods>
-          <include name="launhchromebrowser"/>
+          <include name="dropdownoptions"/>
         </methods>
-      </class> <!-- webdrivermanager.launchbrowser -->
+      </class> <!-- seleniumadvancedtpics.dropdownquniquevalues -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

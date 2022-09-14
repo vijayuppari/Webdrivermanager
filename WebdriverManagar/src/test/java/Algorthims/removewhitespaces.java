@@ -7,7 +7,7 @@ public class removewhitespaces {
 		removespaces("vijay kumar uppari");
 	}
 	
-	// Approcach 1:
+	// Approach 1:
 	public static void removewhitespaces(String str){
 		
 		String s="";
