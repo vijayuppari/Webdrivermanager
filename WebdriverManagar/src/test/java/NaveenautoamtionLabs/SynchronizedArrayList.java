@@ -38,5 +38,7 @@ public class SynchronizedArrayList {
 				System.out.println(next);
 			}
 	}
+	
+	
 
 }

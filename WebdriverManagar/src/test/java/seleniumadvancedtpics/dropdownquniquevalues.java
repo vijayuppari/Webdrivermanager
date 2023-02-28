@@ -27,6 +27,7 @@ public class dropdownquniquevalues {
 		WebElement countries = driver.findElement(By.xpath("//select[@id='countryId']"));
 		Select countrylist=  new Select(countries);
 		List<WebElement> options = countrylist.getOptions();
+		System.out.println("Actual drop downs "+ options);
 		
 		List<String> list= new ArrayList<String>();
 		
@@ -36,6 +37,7 @@ public class dropdownquniquevalues {
 		}
 		list.remove(0);
 		Set<String> hset = new HashSet<>(list);
+		System.out.println("Expected drop downs "+ hset);
 		Assert.assertEquals(list.size(), hset.size());
 		driver.quit();
 		

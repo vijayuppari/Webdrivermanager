@@ -7,7 +7,7 @@ public class Anagram {
 	public static void main(String[] args) {
 		
 		Anagrams("keep", "peek24");
-		
+		Anagrams("keep", "fafa");
 		
 	}
 	

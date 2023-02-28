@@ -47,6 +47,7 @@ public class IntegerCache {
 		
 		while(num>0){
 			int reminder =num%10;
+			
 			sum=(sum*10)+reminder;
 			num=num/10;
 		}

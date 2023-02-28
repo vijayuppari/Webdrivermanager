@@ -21,12 +21,12 @@ public class maximumrepeating {
 		
 		int [] arrA = new int[]{4, 1, 5, 2, 1, 5, 9, 8, 4,6, 5, 3, 2, 4, 7,9,10,9,9,4,5,5};
 		
-		// Approach 1: to get Maximum number form given list
+		// Approach 1: to get Maximum number from given list
 		List<Integer> asList  = new ArrayList<>(Arrays.asList(4, 1, 5, 2, 1, 5, 9, 8, 4,6, 5, 3, 2, 4, 7,9,10,9,9,4,5,5));
 		int orElse = asList.stream().mapToInt(e->e).max().orElse(Integer.MIN_VALUE);
 		System.out.println(orElse);
 		
-		// Approach 2: to get Maximum number form given list
+		// Approach 2: to get Maximum number from given list
 		Optional<Integer> max = asList.stream().max(Comparator.naturalOrder());
 		System.out.println(max.get());
 		

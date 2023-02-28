@@ -1,8 +1,11 @@
 package NaveenautoamtionLabs;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -11,11 +14,11 @@ public class FindDuplicateEmelemtsinArray {
 	
 	public static void main(String[] args) {
 		
-	Integer arr[]= new Integer[]{1,2,3,4,3,5,1,3,5};
+	Integer arr[]= new Integer[]{1,2,3,4,3,5,1,3,5,5,5,5,5};
 	//findduplicates(arr);
 	//findduplicateshashset(arr);	
-	//finddeuplicateshashmap(arr);
-	printdup(arr);
+	finddeuplicateshashmap(arr);
+	//printdup(arr);
 	}
 	
 	
@@ -31,7 +34,7 @@ public class FindDuplicateEmelemtsinArray {
 	}
 	
 	// Approach 2: Using hashset
-	public static void findduplicateshashset(int arr[]){
+	public static void findduplicateshashset(Integer[] arr){
 		
 		HashSet<Object> hset= new HashSet<>();
 		for(Integer element:arr){
@@ -42,9 +45,10 @@ public class FindDuplicateEmelemtsinArray {
 	}
 	
 	//Approach 3: Using HashMap
-	public static void finddeuplicateshashmap(int arr[]){
+	public static void finddeuplicateshashmap(Integer[] arr){
 		
 		HashMap<Integer, Integer> hmap= new  HashMap<>();
+		List<Integer> ls = new ArrayList<Integer>();
 		for(Integer element:arr){
 			 Integer count = hmap.get(element);
 			if(count==null)
@@ -52,13 +56,14 @@ public class FindDuplicateEmelemtsinArray {
 			else
 				hmap.put(element, ++count);
 		}
-		
 			Set<Integer> keySet = hmap.keySet();
 			for(Integer k:keySet){
 				if(hmap.get(k)>1){
+					ls.add(hmap.get(k));
 					System.out.println("Element " + k + " is repated" );
 				}
 			}
+			System.out.println("Hihest repeated number is " + Collections.max(ls));
 	}
 	
 	//Approach 4: Using Streams

@@ -14,7 +14,7 @@ public class highestoccuranceofintegerinArray {
 	public static void main(String[] args) {
 		
 	
-	int[] array = new int[] { 1, 2, 4, 1, 3, 4, 2, 2, 1, 5, 3, 5,2,2 };
+	int[] array = new int[] { 1, 2, 4, 1, 3, 4, 2, 2, 1, 5, 3, 5,2,2,2,2};
 	
 	// Approach 1 
 	Long max = Arrays.stream(array).boxed().collect(Collectors.groupingBy(i -> i, Collectors.counting())).values()
@@ -24,7 +24,7 @@ public class highestoccuranceofintegerinArray {
 	//Approach 2
 	
 	Map<Integer, Integer> hmap = new HashMap<Integer, Integer>();
-	for(int i=0;i<=array.length;i++){
+	for(int i=0;i<=array.length-1;i++){
 		int key = array[i];
 		if(hmap.containsKey(key)){
 			int freq =hmap.get(key);
@@ -43,6 +43,6 @@ public class highestoccuranceofintegerinArray {
 			maxcount= val.getValue();
 		}
 	}
-
+	System.out.println(maxcount);
 	}
 }

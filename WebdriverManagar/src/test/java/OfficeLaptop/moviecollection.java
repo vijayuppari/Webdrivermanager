@@ -27,14 +27,10 @@ public class moviecollection {
 	
 	
 	public static void main(String[] args) {
-
-
 		
-			List<movies> getmovies12 = getmovies();
-			
-			Map<String, String> collect2 = getmovies12.stream().sorted(Comparator.comparing(movies::getName)).collect(Collectors.toMap(movies::getName, movies::getGenere));
-			
-			collect2.forEach((k,v)->System.out.println( k+ " " +v));
+	List<movies> getmovies12 = getmovies();
+	Map<String, String> collect2 = getmovies12.stream().sorted(Comparator.comparing(movies::getName)).collect(Collectors.toMap(movies::getName, movies::getGenere));
+    collect2.forEach((k,v)->System.out.println( k+ " " +v));
 			
 			
 			

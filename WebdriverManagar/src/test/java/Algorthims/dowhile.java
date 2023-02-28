@@ -1,8 +1,10 @@
 package Algorthims;
 
+import Hackerrank.staircase;
+
 public class dowhile {
 	
-	public static void main(String[] args) {
+	public static void main1(String[] args) {
 		
 		int result=1;
 		int num=8;
@@ -30,6 +32,34 @@ public class dowhile {
 		
 		
 	}
+	
+	public static void permute(String str,int start,int end){
+		if(start==end){
+			System.out.println(str);
+		}
+		for(int i=start;i<=end;i++){
+			str=swap(str, start, 1);
+			permute(str, start+1, end);
+			str=swap(str, start, 1);
+		}
+	}
+	
+	
+	public static String swap(String str, int i,int j){
+		
+		char temp;
+		char[] charArray = str.toCharArray();
+		temp=charArray[i];
+		charArray[i]=charArray[j];
+		charArray[j]=temp;
+		return String.valueOf(charArray);
+		
+		
+		
+		
+		
+	}
+	
 
 }
 

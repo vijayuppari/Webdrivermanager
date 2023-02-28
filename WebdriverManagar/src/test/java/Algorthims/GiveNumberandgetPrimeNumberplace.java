@@ -35,11 +35,7 @@ public class GiveNumberandgetPrimeNumberplace {
 				ls.add(i);
 			}
 		}
-		for(Integer k:ls){
 			System.out.println(ls.get(place-1));
-			break;
-		}
-		
 	}
 
 }

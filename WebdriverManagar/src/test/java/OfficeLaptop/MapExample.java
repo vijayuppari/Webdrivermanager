@@ -32,9 +32,11 @@ public class MapExample {
 		// 
 		//String s[]= {"vijay","nanihari","Junnunitya", "sravani"};
 		List<String> words = Arrays.asList("GFG", "Geeks", "vijakumaruppari","for",
-                "GeeksQuiz", "GeeksforGeeks","Geeksforvijay");
+                "GeeksQuiz", "GeeksforGeeks","Geeksforvijayuppari");
 		Optional<String> reduce = words.stream().reduce((word1, word2)->word1.length()>word2.length()? word1:word2);
 		reduce.ifPresent(System.out::println);
+		//String string = reduce.get();
+		//System.out.println(string);
 		//System.out.println(reduce.get());
 		
 		

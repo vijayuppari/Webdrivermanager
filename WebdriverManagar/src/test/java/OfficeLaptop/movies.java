@@ -5,9 +5,6 @@ public class movies {
 	private String name;
 	private String genere;
 	
-	
-	
-	
 	public movies(String name, String genere) {
 		super();
 		this.name = name;
